@@ -8,10 +8,24 @@ body {
 
 /* Style du header et de la navigation */
 header {
-    background-color: #9e0f0f;
+    background-color: #116811;
     color: white;
+    padding: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+}
+
+.connexion_langues {
     padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
