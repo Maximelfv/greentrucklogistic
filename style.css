@@ -1,0 +1,97 @@
+/* Réinitialisation des marges et styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Style du header et de la navigation */
+header {
+    background-color: #9e0f0f;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style des sections */
+section {
+    padding: 50px 20px;
+}
+
+#accueil {
+    background: url('camions.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Mise en page Flexbox pour les services */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+
+/* Style des témoignages */
+.temoignage {
+    background: #f8f8f8;
+    padding: 20px;
+    border-left: 5px solid #ffcc00;
+    margin: 10px;
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Style du footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
