@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTruckCalculator</title>
+    <link rel="stylesheet" href="StyleCalculator 1.css">
+</head>
+<body>
+    <a href="index.html" class="logo-button">
+        <img src="image/image1.png" alt="Logo">
+    </a>
+    
+    <div class="wrapper">
+        <!-- Partie gauche -->
+        <div class="left">
+            <div class="container">
+                <h2>Planifiez votre itinéraire</h2>
+
+                <!-- Itinéraire -->
+                <div class="itineraire">
+                    <input type="text" placeholder="Adresse de départ">
+                    <span class="icon">→</span>
+                    <input type="text" placeholder="Adresse d'arrivée">
+                    <button class="add-stop">+</button>
+                </div>
+
+                <!-- Dates de départ et d'arrivée -->
+                <div class="dates">
+                    <label for="depart">Date de départ :</label>
+                    <input type="date" id="depart">
+
+                    <label for="arrivee">Date d'arrivée :</label>
+                    <input type="date" id="arrivee">
+                </div>
+
+                <!-- Options -->
+                <div class="options">
+                    <label for="poids">Poids de la marchandise (en tonnes) :</label>
+                    <input type="number" id="poids" placeholder="0">
+
+                    <label for="type">Type de marchandise :</label>
+                    <select id="type">
+                        <option value="alimentaire">Alimentaire</option>
+                        <option value="matériaux">Matériaux</option>
+                        <option value="électronique">Électronique</option>
+                        <option value="Frigo">Frigorifique</option>
+                        <option value="LiquideAlim">Liquide alimentaire</option>
+                        <option value="LiquideDang">Liquide "Dangereux"</option>
+                        <option value="Vehicules">Véhicule(s)</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Bouton de calcul -->
+            <button class="calculate-button">Faites le calcul</button>
+
+
+                    <!-- Section "Votre trajet" -->
+        <div class="result-container">
+            <h2>Votre trajet</h2>
+            <p><strong>Taux de carbone rejeté :</strong> <span id="carbone">-</span> kg CO₂</p>
+            <p><strong>Prix estimé :</strong> <span id="prix">-</span> mad</p>
+            <p><strong>Nombre total de kilomètres :</strong> <span id="distance">-</span> km</p>
+            <p><strong>Temps estimé :</strong> <span id="temps">-</span></p>
+        </div>
+
+        </div>
+
+        <!-- Partie droite  -->
+        <div class="right">
+            <img src="image/Carte 1.png" alt="Image haut droite" class="img-haut">
+            <img src="image/graphique 1.png" alt="Image bas droite" class="img-bas">
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector(".calculate-button").addEventListener("click", function() {
+        
+        let distance = Math.floor(Math.random() * 1000) + 50;
+        let temps = Math.floor(distance / 80) + " heures"; 
+        let carbone = (distance * 0.2).toFixed(2); 
+        let prix = (distance * 1.5).toFixed(2); 
+
+       
+        document.getElementById("carbone").textContent = carbone;
+        document.getElementById("prix").textContent = prix;
+        document.getElementById("distance").textContent = distance;
+        document.getElementById("temps").textContent = temps;
+    });
+</script>
+
+
+</html>

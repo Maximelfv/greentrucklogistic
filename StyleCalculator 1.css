@@ -1,0 +1,213 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Style du logo en haut à gauche */
+.logo-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: inline-block;
+    z-index: 10; 
+}
+
+.logo-button img {
+    width: 80px; 
+    height: auto;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+}
+
+.logo-button img:hover {
+    transform: scale(1.1); 
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image/Fond\ 1.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); 
+    z-index: -1; 
+}
+
+
+/* Organisation globale : prend toute la page */
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+
+}
+
+/* Partie gauche (formulaire) */
+.left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Conteneur du formulaire */
+.container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Partie droite */
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    padding: 10px 0;
+    padding-right: 100px;
+}
+
+/* Images occupant 50% de la hauteur chacune */
+.right img {
+    width: 100%;
+    height: 49.5%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+/* Itinéraire */
+.itineraire {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.itineraire input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.add-stop {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-stop:hover {
+    background: #0056b3;
+}
+
+/* Dates */
+.dates {
+    margin: 20px 0;
+}
+
+.dates label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.dates input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Options supplémentaires */
+.options label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.options input, .options select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 700px; 
+}
+
+
+
+.calculate-button {
+    width: 100%;
+    max-width: 700px; 
+    padding: 15px;
+    background-color: #f7ba1f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px; 
+}
+
+.calculate-button:hover {
+    background-color: #fcc844;
+    transform: scale(1.05);
+}
+
+.result-container {
+    width: 100%;
+    max-width: 700px; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.result-container h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.result-container p {
+    font-size: 16px;
+    margin: 5px 0;
+}

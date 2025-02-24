@@ -6,7 +6,15 @@ body {
     text-align: center;    
 }
 
+a {
+    color: inherit; /* Récupère la couleur du texte parent (par exemple, noire ou autre couleur) */
+    text-decoration: none; /* Supprime le soulignement */
+}
 
+a:hover {
+    color: #ffcc00; /* Par exemple, une couleur jaune au survol */
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
 
 /* Style du header et de la navigation */
 
@@ -46,6 +54,8 @@ header div img {
 .connexion {
     padding-left: 10px;
     padding-right: 10px;
+    background-color: red;
+    border-radius: 30px;
 }
 
 .langues {

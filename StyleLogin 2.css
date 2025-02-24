@@ -1,0 +1,117 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement */
+    justify-content: space-between; /* Éloigne les éléments */
+    position: relative; /* Permet de centrer correctement le titre */
+}
+
+.header-container h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centre parfaitement le texte */
+}
+
+/* Logo */
+.logo-btn {
+    display: inline-block;
+    padding: 10px;  /* Espacement autour */
+    border-radius: 8px;  /* Coins arrondis */
+    transition: 0.3s;  /* Animation fluide */
+    
+}
+
+.logo-btn img {
+    width: 70px;  /* Ajustez la taille */
+    height: auto;
+}
+
+.logo-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+/* Boîte de connexion */
+.login-box {
+    text-align: center;
+}
+
+/* Titres */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Champs de saisie */
+input {
+    width: 100%;  /* Largeur égale à la boîte principale */
+    max-width: 400px; /* Largeur max */
+    display: block; /* Les aligner en colonne */
+    margin: 10px auto; /* Centrer */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Empêche le dépassement */
+}
+
+/* Boutons */
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Bouton Connexion */
+.Connexion {
+    background-color: #007bff;
+    color: white;
+}
+
+.Connexion:hover {
+    background-color: #0056b3;
+}
+
+/* Bouton Créer un compte */
+.CreerCompte {
+    background-color: #28a745;
+    color: white;
+}
+
+.CreerCompte:hover {
+    background-color: #1e7e34;
+}
+
+/* Bouton Annuler */
+.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel:hover {
+    background-color: #a71d2a;
+}
