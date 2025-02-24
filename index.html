@@ -26,7 +26,12 @@
                         <h3><a href="GreenTruckLogin.html">connexion</h3></a>
                     </div>
                     <div class="langues">
-                        <h6>Langues</h6>
+                        <label for="type" id="langues-label">Langues</label>
+                        <select id="type">
+                            <option value="Français">Français</option>
+                            <option value="Anglais">Anglais</option>
+                            <option value="Arabe">Arabe</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -43,20 +48,27 @@
     </div>
 
 
-    <div class="background_body">
-        <!-- Section Présentation -->
-        <section id="presentation">
-            <div class="separateur"></div>
-            <h3>Bienvenue chez <span> GreenTruck Logistic</span></h3>        
-            <div class="intro">
+    
+    <!-- Section Présentation -->
+    <section id="presentation">
+        <div class="separateur"></div>
+        <h3>Bienvenue chez <span> GreenTruck Logistic</span></h3>        
+        <div class="intro">
+            <div class="text_presentation">
                 <p>
-                    GreenTruck Logistics est une startup innovante basée à Casablanca, Maroc, spécialisée dans l’optimisation du transport de marchandises. Nous offrons une plateforme numérique permettant aux entreprises de réduire leur empreinte carbone en optimisant leurs itinéraires de livraison, réduisant ainsi les coûts et améliorant la gestion des stocks. En complément, nous proposons un service privé de camions équipés et opérés par un personnel qualifié, garantissant un transport efficace et respectueux de l’environnement. Notre ambition est de déployer ce modèle à l’échelle nationale afin de contribuer activement à la transition écologique du secteur logistique au Maroc.
+                    GreenTruck Logistics est une startup innovante basée à Casablanca, Maroc, spécialisée dans l’optimisation du transport de marchandises. Nous offrons une plateforme numérique permettant aux entreprises de réduire leur empreinte carbone en optimisant leurs itinéraires de livraison, réduisant ainsi les coûts et améliorant la gestion des stocks.
                 </p>
-                <div class="graph_intro">
-                    <img src="image/image1.png" alt="graph_introduction">
-                </div>
+                <p>
+                    En complément, nous proposons un service privé de camions équipés et opérés par un personnel qualifié, garantissant un transport efficace et respectueux de l’environnement. Notre ambition est de déployer ce modèle à l’échelle nationale afin de contribuer activement à la transition écologique du secteur logistique au Maroc.
+                </p>
             </div>
-        </section>
+            <div class="graph_intro">
+                <img src="image/image (21).png" alt="graph_introduction">
+            </div>
+        </div>
+    </section>
+
+    <div class="background_body">    
 
         <!-- Section Services -->
         <section id="services">
@@ -79,10 +91,14 @@
                 </div>
                 <div class="service">
                     <a href="GreenTruckCalculator.html">
-                    <img src="image/image de camin.jpg" alt="camion3">
+                    <img src="image/calculette.png" alt="camion3">
                     <h3>Calculator</h3>
                     <p>Faites un clacul rapide de l'impact de votre trajet.</p>
                     </a>
+                </div>
+                <div class="service service_question">
+                    <h3>D'autre Questions ?</h3>
+                    <a href="#contact"><p><button type="submit"><img src="image/paper-airplane-sign-dark-gray-icon-on-transparent-vector-9549041-removebg-preview.png" alt="">Envoyer</button></p></a>
                 </div>
             </div>
         </section>
