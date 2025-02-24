@@ -6,14 +6,13 @@ body {
     text-align: center;    
 }
 
+
+
 /* Style du header et de la navigation */
-.background_acceuil::before {
-    background: rgba(255, 255, 255, 0.5);
-    
-}
 
 .background_acceuil{
-    background-image: url("image/image2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)), url("image/image2.jpg");
+    /*background-image: url("image/image2.jpg");*/
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
@@ -74,14 +73,36 @@ header div img {
 }
 
 /* Style des sections */
+.background_body::before{
+    content: ""; 
+    filter: blur(0px);
+}
+
+.background_body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)), url("image/New_Zealand_Roads_451893.jpg"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;   
+}
+
 section {
     padding: 50px 20px;
 }
 
 #accueil {
     background: url('camions.jpg') no-repeat center center/cover;
-    color: black;
+    color: white;
     padding: 100px 20px;
+}
+
+#accueil h2 {
+    font-size: 50px;
+    
+}
+
+#accueil p{
+    font-size: 25px;
+    
 }
 
 .btn {
@@ -92,6 +113,51 @@ section {
     font-weight: bold;
     border-radius: 5px;
 }
+
+/*Style de l'introductio de l'entreprise*/
+#presentation{
+    display: flex;
+    flex-direction: column;
+}
+
+.separateur{
+    width: 150px; /* Largeur de la barre */
+    height: 4px; /* Épaisseur */
+    background-color: green; /* Couleur */
+    border: none; /* Supprime la bordure */
+}
+
+#presentation h3{
+    display: flex;
+    align-items: center;
+}
+
+#presentation span{
+    font-size: 24px; /* Ajuste la taille du texte */
+    font-weight: bold; /* Met en gras si nécessaire */
+    color: green;
+    margin-left: 5px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#presentation p{
+    display: flex;
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+}
+
+#presentation img{
+    width: 300px;
+    height: 300px;
+}
+
 
 /* Mise en page Flexbox pour les services */
 .services-container {
@@ -106,6 +172,12 @@ section {
     border-radius: 10px;
     width: 30%;
     margin: 10px;
+}
+
+.service img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Style des témoignages */
